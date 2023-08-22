@@ -1,0 +1,12 @@
+$primaryColor: yellow;
+
+h1 {
+  color: red;
+}
+
+.appHeader {
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
