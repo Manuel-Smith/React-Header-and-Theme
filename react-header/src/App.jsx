@@ -1,7 +1,7 @@
 import Header from "./assets/Header/Header";
 import LeftSideBar from "./assets/LeftSideBar/LeftSideBar";
 import "./App.scss";
-
+import MainSection from "./assets/MainSection/MainSection";
 function App() {
   return (
     <>
@@ -11,6 +11,9 @@ function App() {
       <aside className="appLeftSideBar">
         <LeftSideBar />
       </aside>
+      <main className="appMain">
+        <MainSection />
+      </main>
     </>
   );
 }

@@ -4,11 +4,14 @@ const Footer = () => {
       <ul>
         <li>
           <i className="fa-solid fa-right-from-bracket"></i>
-          <a href="#">Log Out</a>
+          <p>Log Out</p>
         </li>
       </ul>
       <p>
-        All rights reserved &copy; <a href="https://cranelux.com">Cranelux</a>
+        All rights reserved &copy;{" "}
+        <a href="https://cranelux.com" target="_blank" rel="noreferrer">
+          Cranelux
+        </a>
       </p>
     </footer>
   );

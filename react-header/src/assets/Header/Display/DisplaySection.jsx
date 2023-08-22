@@ -2,9 +2,8 @@ import Dark from "./Dark";
 import Light from "./Light";
 const DisplaySection = () => {
   return (
-    <div>
-      <p>Display</p>
-      <div>
+    <div className="displayMode">
+      <div className="displayIcons">
         <Light />
         <Dark />
       </div>

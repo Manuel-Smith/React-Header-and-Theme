@@ -1,5 +1,9 @@
 const Status = () => {
-  return <div>Status</div>;
+  return (
+    <p>
+      <i className="fa-solid fa-thermometer"></i>Status
+    </p>
+  );
 };
 
 export default Status;

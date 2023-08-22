@@ -1,5 +1,11 @@
 const DashboardHeader = () => {
-  return <div>MailDashBoard</div>;
+  return (
+    <div className="dashboardTitle">
+      <p>
+        Mail<span>Dash</span>Board
+      </p>
+    </div>
+  );
 };
 
 export default DashboardHeader;

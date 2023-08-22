@@ -4,11 +4,14 @@ import Settings from "./Settings";
 import Status from "./Status";
 const AppUser = () => {
   return (
-    <div>
-      <Profile />
-      <Settings />
-      <Status />
-      <Logout />
+    <div className="userProfile">
+      <div className="userIcon"></div>
+      <div className="profileMenu">
+        <Profile />
+        <Settings />
+        <Status />
+        <Logout />
+      </div>
     </div>
   );
 };

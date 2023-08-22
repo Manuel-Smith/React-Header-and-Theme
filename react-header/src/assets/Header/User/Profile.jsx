@@ -1,5 +1,9 @@
 const Profile = () => {
-  return <div>Profile</div>;
+  return (
+    <p>
+      <i className="fa-solid fa-user"></i>Profile
+    </p>
+  );
 };
 
 export default Profile;

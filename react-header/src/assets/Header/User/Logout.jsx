@@ -1,5 +1,9 @@
 const Logout = () => {
-  return <div>Logout</div>;
+  return (
+    <p>
+      <i className="fa-solid fa-right-from-bracket"></i>Logout
+    </p>
+  );
 };
 
 export default Logout;
