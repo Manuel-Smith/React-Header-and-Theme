@@ -1,5 +1,5 @@
 const Menu = () => {
-  return <div>Menu</div>;
+  return <i className="fa-solid fa-bars"></i>;
 };
 
 export default Menu;

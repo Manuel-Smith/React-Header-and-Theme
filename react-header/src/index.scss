@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Global Variables
+$primaryColor: #c71230;
+$sideAndMenuBar: #fff;
+$linkColor: #743525;
+$borderOutline: #502c2b50;
+$headerColor: hsl(225, 23%, 67%);
+$mainThemeColor: #ffffff;
+$shadowDashboard: 1px 1px 10px 2px rgba(46, 44, 43, 0.24);
+$borderThickness: 5px;
+body {
+  background-color: $mainThemeColor;
+}
+
+.appHeader {
+  min-height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px $linkColor solid;
+}
+
+.leftSideMenu {
+  position: fixed;
+  top: 5.5rem;
+  left: 0.5rem;
+  height: 90%;
+  width: 18%;
+  padding: 2rem;
+  border-left: $borderThickness $linkColor solid;
+  box-shadow: $shadowDashboard;
+}

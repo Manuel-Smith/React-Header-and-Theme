@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Header from "./assets/Header/Header";
+import LeftSideBar from "./assets/LeftSideBar/LeftSideBar";
 import "./App.scss";
 
 function App() {
@@ -8,6 +8,9 @@ function App() {
       <header className="appHeader">
         <Header />
       </header>
+      <aside className="appLeftSideBar">
+        <LeftSideBar />
+      </aside>
     </>
   );
 }

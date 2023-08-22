@@ -1,5 +1,5 @@
 const Light = () => {
-  return <div>Light</div>;
+  return <i class="fa-regular fa-sun"></i>;
 };
 
 export default Light;

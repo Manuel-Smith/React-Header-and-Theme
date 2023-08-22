@@ -3,8 +3,11 @@ import Light from "./Light";
 const DisplaySection = () => {
   return (
     <div>
-      <Dark />
-      <Light />
+      <p>Display</p>
+      <div>
+        <Light />
+        <Dark />
+      </div>
     </div>
   );
 };
