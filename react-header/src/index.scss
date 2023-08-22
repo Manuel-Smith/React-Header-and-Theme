@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
 // Global Variables
 $primaryColor: #c71230;
 $sideAndMenuBar: #fff;
@@ -34,7 +45,7 @@ body {
   border-bottom: 1px $linkColor solid;
 }
 
-.leftSideMenu {
+.leftSideMenuBar {
   position: fixed;
   top: 5.5rem;
   left: 0.5rem;
@@ -43,4 +54,37 @@ body {
   padding: 2rem;
   border-left: $borderThickness $linkColor solid;
   box-shadow: $shadowDashboard;
+
+  gap: 10px;
+  display: grid;
+
+  .leftMenu > ul {
+    height: 50%;
+    display: grid;
+
+    li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px $borderOutline solid;
+      gap: $borderThickness;
+      font-size: 1.4rem;
+      padding-left: 1rem;
+      margin-top: $borderThickness;
+      cursor: pointer;
+
+      i {
+        color: $primaryColor;
+      }
+      p {
+        text-decoration: none;
+        color: $linkColor;
+      }
+    }
+    li:hover {
+      transition: 400ms ease-in-out;
+      background-color: #ffffff;
+      box-shadow: $shadowDashboard;
+    }
+  }
 }

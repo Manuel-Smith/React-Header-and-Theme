@@ -1,23 +1,22 @@
-import Footer from "../Footer/Footer";
 const LeftMenu = () => {
   return (
-    <div>
+    <div className="leftMenu">
       <ul>
         <li>
           <i className="fa-solid fa-paper-plane"></i>
-          <a href="#">Mailing List</a>
+          <p>Mailing List</p>
         </li>
         <li>
           <i className="fa-regular fa-map"></i>
-          <a href="#">Campaigns</a>
+          <p>Campaigns</p>
         </li>
         <li>
           <i className="fa-solid fa-chart-simple"></i>
-          <a href="#">Analytics</a>
+          <p>Analytics</p>
         </li>
         <li>
           <i className="fa-regular fa-comments"></i>
-          <a href="#">Message</a>
+          <p>Message</p>
         </li>
       </ul>
     </div>
