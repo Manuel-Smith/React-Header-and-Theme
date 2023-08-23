@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  --primary-color: #c71230;
+  --side-and-menu-bar: #fff;
+  --link-color: #743525;
+  --border-outline: #502c2b50;
+  --header-color: hsl(225, 23%, 67%);
+  --main-theme-color: #ffffff;
+  --shadow-dashboard: 1px 1px 10px 2px rgba(46, 44, 43, 0.24);
+}
+
+body {
+  background: var(--main-theme-color);
+  height: 100vh;
+  display: block;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+  line-height: 2;
+}
+/* Styling code for the header section*/
+
+header {
+  /* box-shadow: var(--shadow-dashboard); */
+  /* background-color: var(--header-color); */
+  min-height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--link-color) solid;
+}
+
+header div {
+  margin: 0 1rem;
+}
+header > .craneluxlogo {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+header > .craneluxlogo > span {
+  color: var(--link-color);
+}
+
+header > .menu-icon {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 2rem;
+  background: transparent;
+  padding: 0 0.4rem;
+  box-shadow: var(--shadow-dashboard);
+}
+
+header .search-form {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  border-radius: 15px;
+  border: var(--border-outline) 1px solid;
+  box-shadow: var(--shadow-dashboard);
+}
+
+header .search-form * {
+  flex-basis: 1;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+
+header .search-form form input {
+  width: 69%;
+  /* width: 70%; */
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+img {
+  width: 70%;
+}
+
+header .search-form form button,
+header .search-form form input {
+  padding: 8px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+header .search-form form input::placeholder {
+  color: var(--link-color);
+}
+
+header .search-form form button {
+  width: 30%;
+  position: relative;
+  right: 0;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  border: none;
+}
+
+header .profile-section {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: var(--shadow-dashboard);
+  text-align: center;
+  padding-top: 0.5rem;
+  color: white;
+}
+
+header .profile-section .overlay {
+  position: absolute;
+  height: 60px;
+  background-color: red;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+}
+
+/* header {
+  box-shadow: var(--shadow-dashboard);
+} */
+
+/*Styling the sidebar*/
+aside {
+  background: var(--side-and-menu-bar);
+  height: 90%;
+  position: fixed;
+  left: 0.5rem;
+  top: 5.5rem;
+  width: 18%;
+  display: grid;
+  padding: 1rem 5ch 0 2rem;
+  border-left: 5px var(--link-color) solid;
+}
+
+.left-side {
+  box-shadow: var(--shadow-dashboard);
+}
+
+aside ul > li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-outline);
+}
+
+aside ul > li > i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.none-display > ul > li > a {
+  display: none;
+}
+
+.bigger-icons > ul > li > i {
+  line-height: 2;
+  font-size: 1.4rem;
+}
+
+aside .footer-item {
+  position: relative;
+}
+
+aside .footer-item footer {
+  position: absolute;
+  color: var(--primary-color);
+  top: 70%;
+}
+
+aside .footer-item footer p,
+aside .footer-item footer p a {
+  color: var(--shadow-dashboard);
+  font-size: 1rem;
+}
+
+/* #footer-item > ul > li > a {
+  display: none;
+} */
+
+aside .footer-item footer p a {
+  color: var(--link-color);
+}
+
+.hide-copyright {
+  display: none;
+}
+/*This is the code for the main body*/
+.main-section {
+  width: 80%;
+  min-height: 80%;
+  position: relative;
+  left: 19%;
+  top: 7rem;
+  border: 1px var(--border-outline) dashed;
+  box-shadow: var(--shadow-dashboard);
+}
+
+/* Create campaign button */
+.main-section .create-campaign button {
+  color: var(--link-color);
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: var(--main-theme-color);
+  box-shadow: var(--shadow-dashboard);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.main-section .create-campaign button i {
+  color: var(--primary-color);
+  z-index: 2;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Cranelux mail</title>
+    <link rel="stylesheet" href="../public/css/dashboard.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../public/images/temporary-cranelux-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../public/css/dashboard_main_section.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="craneluxlogo" id="mail-dashboard">
+        <span>Mail</span>Dash<span>Board</span>
+      </div>
+      <div class="search-form">
+        <form action="/views/dashboard.html" method="post">
+          <input type="search" placeholder="Search Mail List ..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="profile-section">
+        <div class="profile-image">
+          <img
+            src="../public/images/temporary-cranelux-logo.png"
+            alt="profile"
+          />
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <aside class="left-side">
+      <div class="menu-items-side" id="menu-items-side">
+        <ul>
+          <li>
+            <i class="fa-solid fa-paper-plane"></i><a href="">Mailing List</a>
+          </li>
+          <li><i class="fa-regular fa-map"></i><a href="">Campaigns</a></li>
+          <li>
+            <i class="fa-solid fa-chart-simple"></i><a href="">Analytics</a>
+          </li>
+          <li><i class="fa-regular fa-comments"></i><a href="">Message</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <footer id="footer-item">
+          <ul>
+            <li>
+              <i class="fa-solid fa-right-from-bracket"></i
+              ><a href="">Log Out</a>
+            </li>
+          </ul>
+
+          <p id="copyright">
+            All rights reserved &copy;
+            <a target="_blank" href="https://cranelux.com">Cranelux</a>
+          </p>
+        </footer>
+      </div>
+    </aside>
+    <main class="main-section" id="main-section">
+      <!-- Button for Creating a campaign -->
+      <div class="create-campaign">
+        <button><i class="fa-solid fa-pencil"></i> Create Campaign</button>
+      </div>
+      <!-- <div>
+        Sort Form
+        <form action="/">
+          <input type="text" placeholder="Search Name" />
+        </form>
+      </div> -->
+      <!-- E -->
+      <div id="dashboard-homepage">
+        <div class="quick-actions">
+          <p
+            class="tags"
+            data-gloss="Add, Import, and Export subscribers quickly"
+          >
+            Quick Actions
+          </p>
+          <div class="action-buttons">
+            <button class="add-subscriber">
+              <i class="fa-solid fa-user-plus"></i>Add a subscriber
+            </button>
+            <button class="import-contacts">
+              <i class="fa-solid fa-file-import"></i>Import contacts
+            </button>
+            <button class="export-contacts">
+              <i class="fa-solid fa-download"></i>Export contacts
+            </button>
+          </div>
+        </div>
+        <div class="email-performance-dashboard">
+          <p class="tags" data-gloss="Shows Combined metrics for your emails">
+            Email Performance
+          </p>
+          <div class="all-performance-elements">
+            <div class="buttons-days">
+              <button>1 week</button>
+              <button>1 Month</button>
+              <button>3 Months</button>
+            </div>
+            <div class="performance-container">
+              <div id="open-rate">
+                <p>Open rate</p>
+                <p>0.00%</p>
+              </div>
+              <div id="click-rate">
+                <p>Click rate</p>
+                <p>0.00%</p>
+              </div>
+              <div id="clicks-per-unique-opens">
+                <p>Clicks per unique opens</p>
+                <p>0.00%</p>
+              </div>
+              <div id="unsubscribed">
+                <p>Unsubscribed</p>
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="audience-dashboard">
+          <div>
+            <div>
+              <p
+                class="tags"
+                data-gloss="Shows contact metrics from your select audience"
+              >
+                Audience
+              </p>
+            </div>
+            <div class="buttons-days">
+              <button>1 week</button>
+              <button>1 Month</button>
+              <button>3 Months</button>
+            </div>
+            <div>
+              <p>Current contacts</p>
+              <p>0.00%</p>
+              <p>Compared to the last 1 week</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p
+                class="tags"
+                data-gloss="Show metrics of your most recent emails"
+              >
+                Recent Campaign Performance
+              </p>
+            </div>
+            <table class="campaign-table">
+              <tr>
+                <th>Name of Campaign</th>
+                <th>No. Of Recipients</th>
+              </tr>
+            </table>
+            <a href="/">View Analytics</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats for the home page -->
+    </main>
+    <script src="../public/js/inner-dashboard.js"></script>
+    <script src="../public/js/menu-icon.js"></script>
+  </body>
+</html>
